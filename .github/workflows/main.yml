@@ -4,7 +4,8 @@ on:
   push:
     branches: [ master ]
   schedule:
-    - cron: "5 0 * * *"
+   # This triggers the run every Sunday at midnight UTC (once per week)
+   - cron: "0 0 * * 0"
   workflow_dispatch:
 
 permissions:
